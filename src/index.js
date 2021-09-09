@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.css";
-
-let destination = document.querySelector("#container");
+import {BrowserRouter as Router} from "react-router-dom";
+import App from "./App/App";
 
 ReactDOM.render(
-    <div>
-      <h1>Hello</h1>
-    </div>,
-    destination
+    <Router>
+        <App/>
+    </Router>,
+    document.querySelector("#container")
 );
